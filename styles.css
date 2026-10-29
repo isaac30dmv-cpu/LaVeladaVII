@@ -1,0 +1,213 @@
+:root {
+    --bg-dark: #09090b;
+    --bg-card: rgba(24, 24, 27, 0.7);
+    --text-main: #f4f4f5;
+    --neon-blue: #00d4ff;
+    --neon-red: #ff2a2a;
+    --neon-gold: #fbbf24;
+    --border-light: rgba(255, 255, 255, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: var(--bg-dark);
+    background-image: radial-gradient(circle at top, #1a1a2e 0%, var(--bg-dark) 50%);
+    color: var(--text-main);
+}
+
+/* CABECERA */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(9, 9, 11, 0.85);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--border-light);
+    z-index: 1000;
+}
+
+.header-left { display: flex; align-items: center; gap: 20px; }
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text-main);
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover { transform: scale(1.03); }
+.img-logo { height: 50px; border-radius: 8px; }
+
+.logo-texto {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ffffff, var(--neon-blue));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.cuenta-atras-box { 
+    border: 1px solid var(--neon-blue); 
+    padding: 8px 15px; 
+    border-radius: 6px; 
+    font-weight: bold; 
+    color: var(--neon-blue); 
+    box-shadow: 0 0 10px rgba(0,212,255,0.2); 
+}
+
+nav { display: flex; gap: 20px; align-items: center; }
+nav a { color: var(--text-main); text-decoration: none; font-size: 14px; font-weight: 600; text-transform: uppercase; transition: 0.3s; }
+nav a:hover { color: var(--neon-blue); }
+.btn-comprar-nav { background: var(--text-main); color: var(--bg-dark); padding: 8px 16px; border-radius: 4px; }
+.btn-comprar-nav:hover { background: var(--neon-blue); color: #000; }
+
+/* GLOBALES */
+section { max-width: 1100px; margin: 0 auto; padding: 100px 20px 40px; }
+.section-title { text-align: center; font-size: 2.5rem; margin-bottom: 50px; letter-spacing: 2px; text-transform: uppercase; background: linear-gradient(90deg, var(--neon-blue), var(--neon-red)); -webkit-background-clip: text; color: transparent; }
+
+/* HERO */
+#hero { text-align: center; padding-top: 150px; }
+.titulo-gigante { font-size: 4.5rem; margin: 0; font-style: italic; }
+.fecha-destacada { font-size: 2rem; color: var(--neon-gold); margin: 10px 0; }
+.subtitulo { font-size: 1.2rem; color: #a1a1aa; }
+
+/* COMBATES GRID DOBLE */
+.grid-combates-doble { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+@media(max-width: 768px){ .grid-combates-doble { grid-template-columns: 1fr; } }
+
+.tarjeta-combate { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; backdrop-filter: blur(5px); }
+.tarjeta-combate.mixto { border: 1px solid var(--neon-gold); }
+
+.cabecera-combate { display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid var(--border-light); }
+.luchador { text-align: center; width: 40%; }
+.luchador h3 { margin: 10px 0 0; font-size: 1.1rem; }
+.foto-placeholder { width: 100%; height: 120px; background: #27272a; border-radius: 8px; display: flex; justify-content: center; align-items: center; color: #71717a; }
+.foto-placeholder.rojo { border-bottom: 3px solid var(--neon-red); }
+.foto-placeholder.azul { border-bottom: 3px solid var(--neon-blue); }
+
+.vs-neon { font-size: 2rem; font-weight: bold; font-style: italic; }
+.mixto-text { color: var(--neon-gold); font-size: 1.2rem; }
+
+/* DESPLEGABLES */
+details { background: rgba(0,0,0,0.3); padding: 15px; cursor: pointer; }
+summary { font-weight: bold; text-align: center; outline: none; }
+.stats-contenido { display: flex; justify-content: space-between; padding-top: 15px; text-align: center; }
+.stats-contenido div { width: 45%; }
+.stats-contenido p { margin: 5px 0; font-size: 0.9rem; color: #a1a1aa; }
+.btn-votar { width: 100%; padding: 8px; margin-top: 10px; background: #3f3f46; color: white; border: none; border-radius: 4px; cursor: pointer; transition: 0.3s; }
+.btn-votar:hover { background: var(--neon-blue); }
+
+/* ARTISTAS */
+.grid-artistas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
+.foto-artista { width: 100%; aspect-ratio: 1; background: #27272a; border-radius: 50%; border: 2px solid var(--neon-gold); margin-bottom: 10px; }
+
+/* HORARIOS */
+.tabla-moderna { width: 100%; border-collapse: collapse; background: var(--bg-card); border-radius: 12px; overflow: hidden; }
+.tabla-moderna th { background: rgba(255,255,255,0.05); padding: 15px; text-align: left; }
+.tabla-moderna td { padding: 15px; border-top: 1px solid var(--border-light); }
+
+/* FAQ */
+.faq-container details { border: 1px solid var(--border-light); border-radius: 8px; margin-bottom: 10px; background: var(--bg-card); }
+.faq-container summary { text-align: left; color: var(--neon-blue); }
+.faq-container p { color: #a1a1aa; margin-top: 10px; line-height: 1.5; }
+
+/* ENTRADAS */
+.entradas-container { display: flex; gap: 40px; align-items: center; background: var(--bg-card); padding: 40px; border-radius: 12px; border: 1px solid var(--border-light); }
+.mapa-estadio-wrapper { flex: 1; text-align: center; }
+
+#svg-estadio { 
+    width: 100%; 
+    max-width: 380px; 
+    filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.2)); 
+}
+
+.zona { 
+    fill: rgba(0, 119, 255, 0.35); 
+    stroke: var(--neon-blue); 
+    stroke-width: 2; 
+    cursor: pointer; 
+    transition: all 0.25s ease; 
+}
+
+.zona:hover { 
+    fill: rgba(0, 212, 255, 0.65); 
+}
+
+.zona.pista { 
+    fill: #f95738; 
+    stroke: #ff7b00; 
+    stroke-width: 2.5; 
+}
+
+.zona.pista:hover { 
+    fill: #ff7b00; 
+}
+
+.zona.activa { 
+    fill: var(--neon-gold) !important; 
+    stroke: #ffffff !important; 
+    stroke-width: 3.5 !important; 
+    filter: drop-shadow(0 0 8px var(--neon-gold));
+}
+
+.info-seleccion { flex: 1; text-align: center; }
+.destacado { font-size: 1.5rem; font-weight: bold; color: var(--neon-gold); display: block; margin: 10px 0; }
+.subnota { font-size: 0.85rem; color: #a1a1aa; margin-bottom: 20px; }
+.btn-accion { background: var(--text-main); color: var(--bg-dark); font-size: 1.2rem; font-weight: bold; padding: 15px 30px; border: none; border-radius: 6px; cursor: pointer; width: 100%; transition: 0.3s; }
+.btn-accion:hover { background: var(--neon-gold); }
+
+/* FORMULARIO */
+.formulario-container { background: var(--bg-card); padding: 40px; border-radius: 12px; border: 1px solid var(--border-light); max-width: 600px; margin: 0 auto; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
+input { background: rgba(0,0,0,0.5); border: 1px solid var(--border-light); color: white; padding: 12px; border-radius: 6px; width: 100%; box-sizing: border-box; }
+.resumen-pago { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 6px; margin-bottom: 20px; text-align: center; border: 1px dashed var(--neon-gold); }
+.btn-secundario { background: transparent; color: white; border: 1px solid white; padding: 10px; border-radius: 6px; width: 100%; margin-top: 10px; cursor: pointer; }
+.btn-secundario:hover { background: rgba(255,255,255,0.1); }
+.mensaje-exito { margin-top: 20px; background: rgba(34, 197, 94, 0.2); border: 1px solid #22c55e; color: #4ade80; padding: 15px; border-radius: 6px; text-align: center; font-weight: bold; }
+
+/* PATROCINADORES */
+.grid-patrocinadores { display: flex; gap: 20px; justify-content: center; }
+.patroc { background: var(--bg-card); padding: 20px 40px; border-radius: 8px; border: 1px solid var(--border-light); }
+
+/* BOTÓN FLOTANTE TOP */
+.btn-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background: rgba(0, 212, 255, 0.2);
+    border: 2px solid var(--neon-blue);
+    color: var(--neon-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.3s ease, background 0.3s ease;
+    z-index: 999;
+}
+
+.btn-top.visible { opacity: 1; pointer-events: auto; }
+.btn-top:hover { background: var(--neon-blue); color: var(--bg-dark); transform: translateY(-4px); }

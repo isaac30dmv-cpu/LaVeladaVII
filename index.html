@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Velada del Año VII</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- CABECERA FIJA -->
+    <header>
+        <div class="header-left">
+            <a href="#hero" class="logo-link">
+                <img src="LogoVelada.jpg" alt="Logo Velada" class="img-logo">
+                <span class="logo-texto">La Velada del Año VII</span>
+            </a>
+            <div class="cuenta-atras-box" id="cuenta-atras">Cargando...</div>
+        </div>
+        <nav>
+            <a href="#hero">Inicio</a>
+            <a href="#combates">Combates</a>
+            <a href="#artistas">Artistas</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#faq">FAQ</a>
+            <a href="#entradas" class="btn-comprar-nav">Comprar Entradas</a>
+        </nav>
+    </header>
+
+    <!-- INICIO (HERO) -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="titulo-gigante">LA VELADA DEL AÑO VII</h1>
+            <h2 class="fecha-destacada">22 de Abril de 2027 - 16:00h</h2>
+            <p class="subtitulo">Estadio La Cartuja, Sevilla. El mayor evento de boxeo de la historia de internet.</p>
+        </div>
+    </section>
+
+    <!-- COMBATES (8 Combates en Total: 6 Estándar + 2 Mixtos) -->
+    <section id="combates">
+        <h2 class="section-title">Cartelera de Combates</h2>
+        <div class="grid-combates-doble">
+            
+            <!-- Combate 1 -->
+            <div class="tarjeta-combate">
+                <div class="cabecera-combate">
+                    <div class="luchador">
+                        <div class="foto-placeholder rojo">Foto 1</div>
+                        <h3>Boxeador 1</h3>
+                    </div>
+                    <div class="vs-neon">VS</div>
+                    <div class="luchador">
+                        <div class="foto-placeholder azul">Foto 2</div>
+                        <h3>Boxeador 2</h3>
+                    </div>
+                </div>
+                <details class="stats-desplegable">
+                    <summary>Ver estadísticas y votar</summary>
+                    <div class="stats-contenido">
+                        <div><p>Edad: 22</p><p>Altura: 1.75m</p><p>Peso: 70kg</p><button class="btn-votar">Votar Boxeador 1</button></div>
+                        <div><p>Edad: 24</p><p>Altura: 1.78m</p><p>Peso: 72kg</p><button class="btn-votar">Votar Boxeador 2</button></div>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Combate 2 -->
+            <div class="tarjeta-combate">
+                <div class="cabecera-combate">
+                    <div class="luchador">
+                        <div class="foto-placeholder rojo">Foto 3</div>
+                        <h3>Boxeador 3</h3>
+                    </div>
+                    <div class="vs-neon">VS</div>
+                    <div class="luchador">
+                        <div class="foto-placeholder azul">Foto 4</div>
+                        <h3>Boxeador 4</h3>
+                    </div>
+                </div>
+                <details class="stats-desplegable">
+                    <summary>Ver estadísticas y votar</summary>
+                    <div class="stats-contenido">
+                        <div><p>Edad: 26</p><p>Altura: 1.80m</p><p>Peso: 78kg</p><button class="btn-votar">Votar Boxeador 3</button></div>
+                        <div><p>Edad: 21</p><p>Altura: 1.76m</p><p>Peso: 77kg</p><button class="btn-votar">Votar Boxeador 4</button></div>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Combate 3 -->
+            <div class="tarjeta-combate">
+                <div class="cabecera-combate">
+                    <div class="luchador">
+                        <div class="foto-placeholder rojo">Foto 5</div>
+                        <h3>Boxeador 5</h3>
+                    </div>
+                    <div class="vs-neon">VS</div>
+                    <div class="luchador">
+                        <div class="foto-placeholder azul">Foto 6</div>
+                        <h3>Boxeador 6</h3>
+                    </div>
+                </div>
+                <details class="stats-desplegable">
+                    <summary>Ver estadísticas y votar</summary>
+                    <div class="stats-contenido">
+                        <div><p>Edad: 23</p><p>Altura: 1.68m</p><p>Peso: 65kg</p><button class="btn-votar">Votar Boxeador 5</button></div>
+                        <div><p>Edad: 25</p><p>Altura: 1.70m</p><p>Peso: 66kg</p><button class="btn-votar">Votar Boxeador 6</button></div>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Combate 4 -->
+            <div class="tarjeta-combate">
+                <div class="cabecera-combate">
+                    <div class="luchador">
+                        <div class="foto-placeholder rojo">Foto 7</div>
+                        <h3>Boxeador 7</h3>
+                    </div>
+                    <div class="vs-neon">VS</div>
+                    <div class="luchador">
+                        <div class="foto-placeholder azul">Foto 8</div>
+                        <h3>Boxeador 8</h3>
+                    </div>
+                </div>
+                <details class="stats-desplegable">
+                    <summary>Ver estadísticas y votar</summary>
+                    <div class="stats-contenido">
+                        <div><p>Edad: 30</p><p>Altura: 1.85m</p><p>Peso: 85kg</p><button class="btn-votar">Votar Boxeador 7</button></div>
+                        <div><p>Edad: 28</p><p>Altura: 1.82m</p><p>Peso: 84kg</p><button class="btn-votar">Votar Boxeador 8</button></div>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Combate 5 -->
+            <div class="tarjeta-combate">
+                <div class="cabecera-combate">
+                    <div class="luchador">
+                        <div class="foto-placeholder rojo">Foto 9</div>
+                        <h3>Boxeador 9</h3>
+                    </div>
+                    <div class="vs-neon">VS</div>
+                    <div class="luchador">
+                        <div class="foto-placeholder azul">Foto 10</div>
+                        <h3>Boxeador 10</h3>
+                    </div>
+                </div>
+                <details class="stats-desplegable">
+                    <summary>Ver estadísticas y votar</summary>
+                    <div class="stats-contenido">
+                        <div><p>Edad: 27</p><p>Altura: 1.79m</p><p>Peso: 75kg</p><button class="btn-votar">Votar Boxeador 9</button></div>
+                        <div><p>Edad: 29</p><p>Altura: 1.81m</p><p>Peso: 76kg</p><button class="btn-votar">Votar Boxeador 10</button></div>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Combate 6 -->
+            <div class="tarjeta-combate">
+                <div class="cabecera-combate">
+                    <div class="luchador">
+                        <div class="foto-placeholder rojo">Foto 11</div>
+                        <h3>Boxeador 11</h3>
+                    </div>
+                    <div class="vs-neon">VS</div>
+                    <div class="luchador">
+                        <div class="foto-placeholder azul">Foto 12</div>
+                        <h3>Boxeador 12</h3>
+                    </div>
+                </div>
+                <details class="stats-desplegable">
+                    <summary>Ver estadísticas y votar</summary>
+                    <div class="stats-contenido">
+                        <div><p>Edad: 24</p><p>Altura: 1.73m</p><p>Peso: 69kg</p><button class="btn-votar">Votar Boxeador 11</button></div>
+                        <div><p>Edad: 25</p><p>Altura: 1.75m</p><p>Peso: 71kg</p><button class="btn-votar">Votar Boxeador 12</button></div>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Combate 7 (MIXTO 1) -->
+            <div class="tarjeta-combate mixto">
+                <div class="cabecera-combate">
+                    <div class="luchador">
+                        <div class="foto-placeholder rojo">Foto 13</div>
+                        <h3>Boxeador 13</h3>
+                    </div>
+                    <div class="vs-neon mixto-text">VS MIXTO</div>
+                    <div class="luchador">
+                        <div class="foto-placeholder azul">Foto 14</div>
+                        <h3>Boxeadora 14</h3>
+                    </div>
+                </div>
+                <details class="stats-desplegable">
+                    <summary>Ver estadísticas y votar</summary>
+                    <div class="stats-contenido">
+                        <div><p>Edad: 25</p><p>Altura: 1.72m</p><p>Peso: 68kg</p><button class="btn-votar">Votar Boxeador 13</button></div>
+                        <div><p>Edad: 26</p><p>Altura: 1.74m</p><p>Peso: 68kg</p><button class="btn-votar">Votar Boxeadora 14</button></div>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Combate 8 (MIXTO 2) -->
+            <div class="tarjeta-combate mixto">
+                <div class="cabecera-combate">
+                    <div class="luchador">
+                        <div class="foto-placeholder rojo">Foto 15</div>
+                        <h3>Boxeadora 15</h3>
+                    </div>
+                    <div class="vs-neon mixto-text">VS MIXTO</div>
+                    <div class="luchador">
+                        <div class="foto-placeholder azul">Foto 16</div>
+                        <h3>Boxeador 16</h3>
+                    </div>
+                </div>
+                <details class="stats-desplegable">
+                    <summary>Ver estadísticas y votar</summary>
+                    <div class="stats-contenido">
+                        <div><p>Edad: 22</p><p>Altura: 1.65m</p><p>Peso: 60kg</p><button class="btn-votar">Votar Boxeadora 15</button></div>
+                        <div><p>Edad: 23</p><p>Altura: 1.67m</p><p>Peso: 62kg</p><button class="btn-votar">Votar Boxeador 16</button></div>
+                    </div>
+                </details>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ARTISTAS -->
+    <section id="artistas">
+        <h2 class="section-title">Artistas Invitados</h2>
+        <div class="grid-artistas">
+            <div class="artista-card"><div class="foto-artista"></div><h3>Artista 1</h3></div>
+            <div class="artista-card"><div class="foto-artista"></div><h3>Artista 2</h3></div>
+            <div class="artista-card"><div class="foto-artista"></div><h3>Artista 3</h3></div>
+            <div class="artista-card"><div class="foto-artista"></div><h3>Artista 4</h3></div>
+        </div>
+    </section>
+
+    <!-- HORARIOS -->
+    <section id="horarios">
+        <h2 class="section-title">Horarios Internacionales</h2>
+        <table class="tabla-moderna">
+            <thead>
+                <tr><th>Hora</th><th>País / Región</th><th>Día</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>16:00</td><td>🇪🇸 España (Península)</td><td>22 Abril</td></tr>
+                <tr><td>10:00</td><td>🇺🇸 Estados Unidos (EST)</td><td>22 Abril</td></tr>
+                <tr><td>07:00</td><td>🇺🇸 Estados Unidos (PST)</td><td>22 Abril</td></tr>
+                <tr><td>08:00</td><td>🇲🇽 México</td><td>22 Abril</td></tr>
+                <tr><td>09:00</td><td>🇨🇴 Colombia / 🇵🇪 Perú</td><td>22 Abril</td></tr>
+                <tr><td>10:00</td><td>🇨🇱 Chile</td><td>22 Abril</td></tr>
+                <tr><td>11:00</td><td>🇦🇷 Argentina / 🇺🇾 Uruguay</td><td>22 Abril</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section id="faq">
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <div class="faq-container">
+            <details>
+                <summary>¿A qué hora abren las puertas del estadio?</summary>
+                <p>Las puertas del Estadio La Cartuja se abrirán al público a las 14:00h (hora peninsular española). Te recomendamos llegar con antelación.</p>
+            </details>
+            <details>
+                <summary>¿Pueden entrar menores de edad?</summary>
+                <p>Sí, los menores de 16 años deberán ir acompañados de un padre, madre o tutor legal, y llevar firmada la autorización de menores disponible en la web.</p>
+            </details>
+            <details>
+                <summary>¿Se puede introducir comida y bebida?</summary>
+                <p>Se permite el acceso con bocadillos y botellas de agua pequeñas (máximo 50cl) sin tapón. No se permiten latas, vidrio ni alcohol.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- ENTRADAS -->
+    <section id="entradas">
+        <h2 class="section-title">Compra de Entradas</h2>
+        
+        <!-- FASE 1: Mapa Circular -->
+        <div id="fase-mapa" class="entradas-container">
+            <div class="mapa-estadio-wrapper">
+                <svg viewBox="0 0 400 400" id="svg-estadio">
+                    <!-- ANILLO EXTERIOR -->
+                    <path d="M 200,20 A 180,180 0 0,1 327,72 L 292,108 A 130,130 0 0,0 200,70 Z" class="zona" data-zona="Grada Alta Sector 1" data-precio="40" />
+                    <path d="M 327,72 A 180,180 0 0,1 380,200 L 330,200 A 130,130 0 0,0 292,108 Z" class="zona" data-zona="Grada Alta Sector 2" data-precio="40" />
+                    <path d="M 380,200 A 180,180 0 0,1 327,328 L 292,292 A 130,130 0 0,0 330,200 Z" class="zona" data-zona="Grada Alta Sector 3" data-precio="40" />
+                    <path d="M 327,328 A 180,180 0 0,1 200,380 L 200,330 A 130,130 0 0,0 292,292 Z" class="zona" data-zona="Grada Alta Sector 4" data-precio="40" />
+                    <path d="M 200,380 A 180,180 0 0,1 73,328 L 108,292 A 130,130 0 0,0 200,330 Z" class="zona" data-zona="Grada Alta Sector 5" data-precio="40" />
+                    <path d="M 73,328 A 180,180 0 0,1 20,200 L 70,200 A 130,130 0 0,0 108,292 Z" class="zona" data-zona="Grada Alta Sector 6" data-precio="40" />
+                    <path d="M 20,200 A 180,180 0 0,1 73,72 L 108,108 A 130,130 0 0,0 70,200 Z" class="zona" data-zona="Grada Alta Sector 7" data-precio="40" />
+                    <path d="M 73,72 A 180,180 0 0,1 200,20 L 200,70 A 130,130 0 0,0 108,108 Z" class="zona" data-zona="Grada Alta Sector 8" data-precio="40" />
+
+                    <!-- ANILLO MEDIO -->
+                    <path d="M 200,70 A 130,130 0 0,1 292,108 L 256,144 A 80,80 0 0,0 200,120 Z" class="zona" data-zona="Grada Baja Sector 1" data-precio="80" />
+                    <path d="M 292,108 A 130,130 0 0,1 330,200 L 280,200 A 80,80 0 0,0 256,144 Z" class="zona" data-zona="Grada Baja Sector 2" data-precio="80" />
+                    <path d="M 330,200 A 130,130 0 0,1 292,292 L 256,256 A 80,80 0 0,0 280,200 Z" class="zona" data-zona="Grada Baja Sector 3" data-precio="80" />
+                    <path d="M 292,292 A 130,130 0 0,1 200,330 L 200,280 A 80,80 0 0,0 256,256 Z" class="zona" data-zona="Grada Baja Sector 4" data-precio="80" />
+                    <path d="M 200,330 A 130,130 0 0,1 108,292 L 144,256 A 80,80 0 0,0 200,280 Z" class="zona" data-zona="Grada Baja Sector 5" data-precio="80" />
+                    <path d="M 108,292 A 130,130 0 0,1 70,200 L 120,200 A 80,80 0 0,0 144,256 Z" class="zona" data-zona="Grada Baja Sector 6" data-precio="80" />
+                    <path d="M 70,200 A 130,130 0 0,1 108,108 L 144,144 A 80,80 0 0,0 120,200 Z" class="zona" data-zona="Grada Baja Sector 7" data-precio="80" />
+                    <path d="M 108,108 A 130,130 0 0,1 200,70 L 200,120 A 80,80 0 0,0 144,144 Z" class="zona" data-zona="Grada Baja Sector 8" data-precio="80" />
+
+                    <!-- CÍRCULO CENTRAL -->
+                    <circle cx="200" cy="200" r="75" class="zona pista activa" data-zona="Pista VIP" data-precio="120" />
+                    
+                    <text x="200" y="205" fill="white" text-anchor="middle" font-size="14" font-weight="bold" pointer-events="none">PISTA</text>
+                </svg>
+            </div>
+            
+            <div class="info-seleccion">
+                <h3>INFO</h3>
+                <p>Zona: <span id="zona-elegida" class="destacado">Pista VIP</span></p>
+                <p>Precio: <span id="precio-elegido" class="destacado">120</span> € por entrada.</p>
+                <p class="subnota">Los precios son orientativos.</p>
+                <button id="btn-siguiente" class="btn-accion">Siguiente paso</button>
+            </div>
+        </div>
+
+        <!-- FASE 2: Formulario de datos -->
+        <div id="fase-formulario" class="formulario-container" style="display: none;">
+            <h3>Datos del comprador</h3>
+            <form id="form-entradas">
+                <div class="form-grid">
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                    <input type="text" id="apellidos" placeholder="Apellidos" required>
+                    <input type="email" id="correo" placeholder="Correo electrónico" required>
+                    <input type="tel" id="telefono" placeholder="Teléfono" required>
+                    <input type="number" id="edad" placeholder="Edad" min="1" max="99" required>
+                    <input type="number" id="cantidad" placeholder="Nº Entradas (Max 4)" min="1" max="4" value="1" required>
+                </div>
+                <div class="resumen-pago">
+                    <h4>Resumen de la reserva</h4>
+                    <p>Zona elegida: <span id="resumen-zona">Pista VIP</span></p>
+                    <p>Gastos de gestión: 5€ por entrada</p>
+                    <h3>TOTAL: <span id="precio-total">125</span> €</h3>
+                </div>
+                <button type="submit" class="btn-accion">Confirmar Pago</button>
+                <button type="button" id="btn-volver" class="btn-secundario">Volver al mapa</button>
+            </form>
+            <div id="mensaje-exito" style="display: none;" class="mensaje-exito">
+                ¡Compra realizada con éxito! Revisa tu correo electrónico para descargar las entradas.
+            </div>
+        </div>
+    </section>
+
+    <!-- PATROCINADORES -->
+    <section id="patrocinadores">
+        <h2 class="section-title">Patrocinadores</h2>
+        <div class="grid-patrocinadores">
+            <div class="patroc">Marca 1</div><div class="patroc">Marca 2</div><div class="patroc">Marca 3</div><div class="patroc">Marca 4</div>
+        </div>
+    </section>
+
+    <!-- BOTÓN FLOTANTE VOLVER ARRIBA -->
+    <a href="#hero" id="btn-top" class="btn-top" title="Volver al inicio">↑</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
