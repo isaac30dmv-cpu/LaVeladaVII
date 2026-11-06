@@ -1,3 +1,4 @@
+// 1. CUENTA ATRÁS
 const fechaEvento = new Date("April 22, 2027 16:00:00").getTime();
 setInterval(() => {
     const ahora = new Date().getTime();
@@ -11,6 +12,7 @@ setInterval(() => {
     if (el) el.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
 }, 1000);
 
+// 2. BOTÓN FLOTANTE VOLVER ARRIBA
 const btnTop = document.getElementById('btn-top');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 250) {
@@ -20,6 +22,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// 3. SELECCIÓN EN EL MAPA CIRCULAR
 const zonas = document.querySelectorAll('.zona');
 const zonaElegidaText = document.getElementById('zona-elegida');
 const precioElegidoText = document.getElementById('precio-elegido');
