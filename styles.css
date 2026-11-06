@@ -90,15 +90,43 @@ section { max-width: 1100px; margin: 0 auto; padding: 100px 20px 40px; }
 .grid-combates-doble { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
 @media(max-width: 768px){ .grid-combates-doble { grid-template-columns: 1fr; } }
 
-.tarjeta-combate { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; backdrop-filter: blur(5px); }
+.tarjeta-combate { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; backdrop-filter: blur(5px); transition: border-color 0.3s ease, box-shadow 0.3s ease; }
+.tarjeta-combate:hover { border-color: var(--neon-blue); box-shadow: 0 0 15px rgba(0, 212, 255, 0.2); }
 .tarjeta-combate.mixto { border: 1px solid var(--neon-gold); }
 
 .cabecera-combate { display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid var(--border-light); }
 .luchador { text-align: center; width: 40%; }
 .luchador h3 { margin: 10px 0 0; font-size: 1.1rem; }
+
+/* PLACEHOLDERS Y FOTOS DE LUCHADORES */
 .foto-placeholder { width: 100%; height: 120px; background: #27272a; border-radius: 8px; display: flex; justify-content: center; align-items: center; color: #71717a; }
 .foto-placeholder.rojo { border-bottom: 3px solid var(--neon-red); }
 .foto-placeholder.azul { border-bottom: 3px solid var(--neon-blue); }
+
+.foto-luchador {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-luchador.rojo {
+    border: 3px solid var(--neon-red);
+    box-shadow: 0 0 15px rgba(255, 42, 42, 0.4);
+}
+
+.foto-luchador.azul {
+    border: 3px solid var(--neon-blue);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+}
+
+.tarjeta-combate:hover .foto-luchador {
+    transform: scale(1.06);
+}
 
 .vs-neon { font-size: 2rem; font-weight: bold; font-style: italic; }
 .mixto-text { color: var(--neon-gold); font-size: 1.2rem; }
@@ -110,7 +138,7 @@ summary { font-weight: bold; text-align: center; outline: none; }
 .stats-contenido div { width: 45%; }
 .stats-contenido p { margin: 5px 0; font-size: 0.9rem; color: #a1a1aa; }
 .btn-votar { width: 100%; padding: 8px; margin-top: 10px; background: #3f3f46; color: white; border: none; border-radius: 4px; cursor: pointer; transition: 0.3s; }
-.btn-votar:hover { background: var(--neon-blue); }
+.btn-votar:hover { background: var(--neon-blue); color: #000; font-weight: bold; }
 
 /* ARTISTAS */
 .grid-artistas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
